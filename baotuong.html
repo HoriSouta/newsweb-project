@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo tường lớp 12A1</title>
+    
+    <style>
+        /* 1. Bộ chọn định danh (Id selectors) và thẻ cơ bản */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9; /* Màu nền trang web */
+            color: #333; /* Màu chữ */
+            margin: 0;
+            padding: 20px;
+        }
+
+        #container {
+            width: 80%;
+            margin: 0 auto; /* Căn giữa trang web */
+            background-color: #ffffff;
+            border: 2px solid #0056b3; /* Đường viền */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        #header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffe6e6;
+            border-bottom: 2px solid #0056b3;
+        }
+
+        #footer {
+            background-color: #e9ecef;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            border-top: 2px solid #0056b3;
+        }
+
+        /* 2. Bộ chọn lớp (Class selectors) cho các thành phần nội dung */
+        .title {
+            color: #d32f2f;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .article {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .article-title {
+            color: #1976d2;
+            font-size: 22px;
+        }
+
+        .text-content {
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Xác định vị trí hiển thị (Dùng Flexbox cơ bản để chia cột) */
+        .media-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
+
+        .photo-corner, .music-corner {
+            width: 48%; /* Chia đôi màn hình cho Ảnh và Nhạc */
+            text-align: center;
+        }
+
+        /* Định dạng cho Hình ảnh */
+        .image-gallery img {
+            width: 150px;
+            height: 120px;
+            object-fit: cover;
+            margin: 5px;
+            border: 1px solid #999;
+        }
+
+        /* Định dạng biểu mẫu (Form) góc bình luận */
+        .comment-section form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto; /* Căn giữa form */
+        }
+
+        .comment-section input, .comment-section textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            font-family: inherit;
+        }
+
+        .btn-submit {
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-submit:hover {
+            background-color: #115293;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="header">
+            <h1 class="title">BÁO TƯỜNG CỦA LỚP 12A1 KỶ NIỆM NGÀY RA TRƯỜNG</h1>
+        </div>
+
+        <div class="content">
+            
+            <div class="article">
+                <h2 class="article-title">Cảm xúc ngày ra trường</h2>
+                <div class="text-content">
+                    <p>Ngày ra trường, chúng em – tập thể lớp 12A1 – cảm thấy vừa vui vừa xúc động. Chúng em vui vì đã cùng nhau hoàn thành một chặng đường học tập đáng nhớ dưới mái trường thân yêu. Nhưng trong niềm vui ấy cũng có chút buồn khi sắp phải chia tay thầy cô và những người bạn đã gắn bó suốt ba năm qua. Những kỷ niệm về lớp học, về thầy cô và bạn bè sẽ luôn ở mãi trong trái tim của mỗi thành viên lớp 12A1. Chúng em hứa sẽ luôn cố gắng học tập, trưởng thành để không phụ lòng thầy cô và mái trường.</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <h2 class="article-title">Chắp cánh ước mơ</h2>
+                <div class="text-content">
+                    <p>Thầy cô không chỉ dạy chúng em kiến thức mà còn luôn yêu thương, dìu dắt và chắp cánh cho những ước mơ của chúng em bay cao. Nhờ sự tận tâm và kiên nhẫn của thầy cô, chúng em đã trưởng thành hơn từng ngày. [cite: 10] Chúng em vô cùng biết ơn những công lao và tình cảm mà thầy cô đã dành cho mình. Những lời dạy của thầy cô sẽ luôn là hành trang quý giá trên con đường tương lai của chúng em. </p>
+                </div>
+            </div>
+
+            <div class="media-section">
+                <div class="photo-corner">
+                    <h2 class="article-title">Hình ảnh </h2>
+                    <div class="image-gallery">
+                        <img src="anh1.jpg" alt="Ảnh kỷ niệm 1">
+                        <img src="anh2.jpg" alt="Ảnh kỷ niệm 2">
+                        <img src="anh3.jpg" alt="Ảnh kỷ niệm 3">
+                        <img src="anh4.jpg" alt="Ảnh kỷ niệm 4">
+                    </div>
+                </div>
+
+                <div class="music-corner">
+                    <h2 class="article-title">Nhạc </h2>
+                    <p><strong>[LYRICS] Mình Cùng Nhau Đóng Băng - Thùy Chi [cite: 14]</strong></p>
+                    
+                    <audio controls>
+                        <source src="minhcungnhaudongbang.m4a" type="audio/mpeg">
+                        Trình duyệt của bạn không hỗ trợ thẻ audio.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="comment-section">
+                <h2 class="article-title" style="text-align: center;">Góc Bình Luận</h2>
+                <form action="#" method="get">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Nhập email của bạn...">
+                    
+                    <label for="comment">Bình luận:</label>
+                    <textarea id="comment" name="comment" rows="4" required placeholder="Viết cảm nghĩ của bạn..."></textarea>
+                    
+                    <button type="submit" class="btn-submit">Gửi Bình Luận</button>
+                </form>
+            </div>
+
+        </div> <div id="footer">
+            <p><strong>Thông tin nhóm:</strong> Nhóm Tin Học - Lớp 12A1</p>
+            <p><strong>Email đại diện:</strong> nhat.chau.12a1@school.edu.vn</p>
+            <p><strong>Ngày cập nhật:</strong> 16/03/2026</p>
+            <p><em>Nguồn tham khảo: Hình ảnh và âm nhạc từ Internet</em></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
